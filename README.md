@@ -62,15 +62,15 @@ Driver: mongo-driver
 🔧 Installation & Setup
 
 Clone the repository
-
+```text
 git clone https://github.com/<your-username>/book-management-api.git
 cd book-management-api
-
+```
 
 Install dependencies
-
+```text
 go mod tidy
-
+```
 
 Create a .env file
 ```text
@@ -80,15 +80,16 @@ DB_NAME = bookdb
 ```
 
 Run the server
-
+```text
 go run ./cmd/main.go
-
+```
 
 Build the project (optional)
-
+```text
 go build -o ./bin/book-management-api ./cmd/main.go
-
+```
 📡 API Endpoints
+```text
 Method	Endpoint	Description
 GET	/books	Get all books
 GET	/books/{id}	Get a single book
@@ -114,7 +115,7 @@ curl -X POST http://localhost:8000/books \
   "rating": 4.9,
   "read": false
 }'
-
+```
 🧑‍💻 Author
 
 Sumit Vishwakarma
