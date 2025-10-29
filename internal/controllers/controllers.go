@@ -43,7 +43,7 @@ func updateBook(bookId string) int64{
 	}
 	filter := bson.M{"_id":id}
 	update := bson.M{"$set":bson.M{"read":true}}
-	updated, err := Collection.UpdateByID(context.Background(),filter, update)
+	updated, err := Collection.UpdateOne(context.Background(),filter, update)
 	if err != nil {
 		log.Fatal("ERROR! updating the book try again..", err)
 	}
