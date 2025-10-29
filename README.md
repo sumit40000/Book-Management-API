@@ -39,7 +39,7 @@ book-management-api/
 │   │   └── routes.go
 │   │
 │   └── models/                  # Book model
-│       └── book.go
+│       └── models.go
 │
 ├── go.mod                       # Go module file
 ├── go.sum
@@ -96,7 +96,9 @@ GET	/books/{id}	Get a single book
 POST	/books	Create a new book
 PUT	/books/{id}	Update a book (mark as read)
 DELETE	/books/{id}	Delete a book
+```
 🧠 Sample JSON (for POST request)
+```text
 {
   "title": "The Go Programming Language",
   "author": "Alan Donovan",
@@ -104,8 +106,10 @@ DELETE	/books/{id}	Delete a book
   "rating": 4.8,
   "read": false
 }
+```
 
 🪄 Example Request (Using cURL)
+```text
 curl -X POST http://localhost:8000/books \
 -H "Content-Type: application/json" \
 -d '{
