@@ -8,5 +8,6 @@ type Book struct {
 	Author string `json:"author"`
 	Price float64 `json:"price"`
 	Rating float64 `json:"rating"`
+	Read bool `json:"read"`
 }
 
