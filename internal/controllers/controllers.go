@@ -11,9 +11,15 @@ import (
 	"github.com/sumit40000/book-management-api/internal/models"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
+	"go.mongodb.org/mongo-driver/mongo"
 )
 
-var Collection = config.DB.Collection("Books")
+var Collection *mongo.Collection
+
+func InitCollection() {
+    Collection = config.DB.Collection("Books")
+}
+
 
 
 // helper functions for controllers

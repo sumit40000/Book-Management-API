@@ -8,6 +8,7 @@ import (
 
 	"github.com/joho/godotenv"
 	"github.com/sumit40000/book-management-api/internal/config"
+	"github.com/sumit40000/book-management-api/internal/controllers"
 	"github.com/sumit40000/book-management-api/internal/routes"
 )
 
@@ -25,6 +26,7 @@ func main() {
 
 	// connecting the database
 	config.ConnectDb()
+	controllers.InitCollection()
 
 	// starting the server
 	fmt.Println("Starting the server")
