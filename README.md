@@ -25,25 +25,26 @@ Clean folder structure (cmd, internal/config, internal/controllers, internal/rou
 book-management-api/
 │
 ├── cmd/
-│   └── main.go                # Entry point of the project
+│   └── main.go                  # Entry point of the project
 │
 ├── internal/
-│   ├── config/                # MongoDB connection setup
+│   ├── config/                  # MongoDB connection setup
 │   │   └── config.go
 │   │
-│   ├── controllers/           # Controller logic (CRUD)
+│   ├── controllers/             # Controller logic (CRUD)
 │   │   └── controllers.go
 │   │
-│   ├── routes/                # Route definitions
+│   ├── routes/                  # Route definitions
 │   │   └── routes.go
 │   │
-│   └── models/                # Book model
+│   └── models/                  # Book model
 │       └── book.go
 │
-├── go.mod                     # Go module file
+├── go.mod                       # Go module file
 ├── go.sum
-├── .env                       # Environment variables
+├── .env                         # Environment variables
 └── README.md
+
 
 ⚙️ Tech Stack
 
