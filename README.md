@@ -22,6 +22,7 @@ Environment variable configuration using .env
 Clean folder structure (cmd, internal/config, internal/controllers, internal/routes)
 
 🧱 Project Structure
+```text
 book-management-api/
 │
 ├── cmd/
@@ -44,7 +45,7 @@ book-management-api/
 ├── go.sum
 ├── .env                         # Environment variables
 └── README.md
-
+```
 
 ⚙️ Tech Stack
 
