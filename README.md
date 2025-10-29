@@ -73,10 +73,11 @@ go mod tidy
 
 
 Create a .env file
-
+```text
 MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/?appName=Cluster0
 PORT=:8000
-
+DB_NAME = bookdb
+```
 
 Run the server
 
